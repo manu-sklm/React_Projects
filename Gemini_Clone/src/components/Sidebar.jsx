@@ -18,13 +18,13 @@ const Sidebar = () => {
 
   return (
 
-    <div className='inline-flex flex-col justify-between min-h-screen  bg-[#f0f4f9] px-4 py-2'>
+    <div className='inline-flex flex-col justify-between max-h-screen  bg-[#f0f4f9] px-4 py-2'>
         <div className='mt-4'>
 
 
              <img src={assets.menu_icon} alt="menu" onClick={()=>{ setExteded(pre=>!pre)}} className='size-[20px] ml-2'/>
 
-             <div className='inline-flex mt-12  items-center gap-2 py-2 px-3 bg-[#e6eaf1] rounded-full text-sm text-gray-600 cursor-pointer '
+             <div className='inline-flex mt-12  items-center gap-2 py-2 px-3 bg-[#e6eaf1] rounded-full text-sm text-gray-500 cursor-pointer '
              onClick={()=>dispatch(newChat())}
              >
                 <img src={assets.plus_icon} alt="plus icon"  className='w-[20px]'/>

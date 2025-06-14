@@ -80,14 +80,59 @@ const handleSend=()=>{
         after knowing that input state will be available even after sending req, i changed recentPromt to input ,that made prompt visisble at results while loading going on   
 
 
-### 5 showing prevPrompts[] from 0 index -- oldest prompt is showed at top of sidebar instead of the latest
+### 5 showing prevPrompts[] from 0 index -- oldest prompt is showed at top of sidebar instead of the latest  
+        -- used unshit instead of push() which adds the prompt at the first index
 
 
 ### 6 fixing the prevPrompts[] array size , when it is full the oldest prompt will poppped which keepes the consistenty of sidebar layout
+         
+         -- implemented it .
+         -- but later instead of doing that.. i made max-h-[300px] and overflow-y-auto , so that it get's  overflowed  and get's scroll bar also 
+### 6 a : also styled the scroolbar of sidebar [prevprompts] to made it look similar to one in chatgpt  
+
+        -- this styling is not available in tailwindcss
+        -- used custom styling 
+
+        ::-webkit-scrollbar {
+          width: 6px;
+         }
+
+       ::-webkit-scrollbar-thumb {
+          background-color: #c2c8d0; /* Soft gray thumb */
+          border-radius: 10px;
+         }
 
 
-### 7 fixing the resending unwanted api calls: when recentprompt on sidebar is clicked , it triggers another api call with the stored prompt in the prevPrompts
+### 7 solved unwanted scroll bar on conatiner where results is displayed
+     
+     -- to solve this i made the whole page fit in screen size
+     -- reduced some of margin along y-axis
+     -- from min-h-screen  To   h-screen 
+     Note : **I tried max-h-screen ,but note that it makes it shrink when content is minimim than screen size**
+
+
+### 7 a. added styling to the prompt that is visible along with the results similar latest gemini 
+
+			<p className='self-end max-w-[80%] bg-[#e8f0fe] px-4 py-2 rounded-tl-sm rounded-tr-full rounded-br-full rounded-bl-full text-[16px] '>{input}</p>
+### 7 b. added white shadow effect to the top of div of input container that shadows the result text that over flow
+   
+      -- tailwindcss has no shadow-top , so used custom type of css
+
+            shadow-[0_-50px_10px_-6px_rgba(255,255,255,0.6)]
+            
+     also made it only visible when results are displayed-- embedding logic in js expressions
+
+     <div className={`absolute bottom-0 w-full  mx-auto max-w-[900px] 
+     ${showResults? 'shadow-[0_-50px_10px_-6px_rgba(255,255,255,0.6)]'  :''} `}  >
+
+
+### 7 c. fixing the resending unwanted api calls: when recentprompt on sidebar is clicked , it triggers another api call with the stored prompt in the prevPrompts
 
 
 ### 8 managing the scroll bar on main container
+
+### 9 typing effect  && formatting the result data 
+
+### 10 apply smooth transition on clicking menu to enlarge the sidebar
+
 
