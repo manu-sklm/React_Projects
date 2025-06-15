@@ -120,7 +120,7 @@ const Main = () => {
 
 
            </>):(
-					<div className="px-[5%] max-h-[70vh] overflow-y-scroll scrollbar-hide">
+					<div className="px-[5%] max-h-[70vh] overflow-y-scroll scrollbar-hide mb-5">
 						<div className="my-[40px] flex items-center gap-[20px]">
 							<img src={assets.user} alt="" className="w-[40px] rounded-full" />
 							<p className='self-end max-w-[80%] bg-[#e8f0fe] px-4 py-2 rounded-tl-sm rounded-tr-full rounded-br-full rounded-bl-full text-[16px] '>{input}</p>
@@ -148,7 +148,7 @@ const Main = () => {
 
                                <p
                                    className={`transition-all duration-500 ease-in-out opacity-0 translate-y-2 ${
-                                    resultData ? 'opacity-100 translate-y-0' : ''
+                                    resultData ? 'opacity-100 translate-y-0 p-7' : ''
                                    } text-[16px] font-light leading-[1.8]`}  
                                    dangerouslySetInnerHTML={{ __html: resultData }}
                                    
@@ -170,9 +170,9 @@ const Main = () => {
           
           
 
-           <div className={`absolute bottom-0 w-full  mx-auto max-w-[900px] ${showResults? 'shadow-[0_-50px_10px_-6px_rgba(255,255,255,0.6)]'  :''} `}  >
+           <div className={`absolute bottom-0 w-full   mx-auto max-w-[900px] ${showResults? 'shadow-[0_-50px_10px_-6px_rgba(255,255,255,0.6)]'  :''} `}  >
              <div
-                className='flex items-center justify-between bg-[#f0f4f9] px-5 py-2 rounded-full'
+                className='flex items-center justify-between bg-[#f0f4f9] px-5 py-2  rounded-full'
                 >
                   <input type="text"
                     value={inputLocal}
