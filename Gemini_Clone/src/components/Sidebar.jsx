@@ -39,8 +39,8 @@ const Sidebar = () => {
 
 
 
-               <div className={`transition-[opacity,transform] duration-500 origin-left 
-  ${extended ? 'opacity-100 scale-100 ' : 'opacity-0 scale-95 overflow-hidden'}
+               <div className={`transition-all duration-500 origin-left 
+  ${extended ? 'opacity-100 scale-100 ' : 'opacity-0 scale-95  overflow-hidden'}
 `}>      
                          <p    className={` my-5 ml-1 text-gray-700 font-medium `}>Recent</p>
 
