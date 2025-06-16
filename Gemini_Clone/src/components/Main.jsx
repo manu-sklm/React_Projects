@@ -89,7 +89,7 @@ const Main = () => {
             <div className='my-[20px] font-semibold text-[#c4c7c5] text-[56px]'>
                <p className=' '> 
                   <span className='bg-gradient-to-r from-[#4b90ff] to-[#ff5546] bg-clip-text text-transparent'>
-                    Hello, Dev
+                    Hello, Sugu
                   </span>
                 </p>
                <p className=''>How can you help you today</p>

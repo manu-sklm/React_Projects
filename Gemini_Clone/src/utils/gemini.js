@@ -77,9 +77,8 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 // Replace with your actual API keyimport { GoogleGenerativeAI } from "@google/generative-ai";
 
-const genAI = new GoogleGenerativeAI("AIzaSyDFQP_27uktAY-UvN13fspxatPlTQj0-yQ");
-
-export async function runChat(prompt) {
+const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
+ async function runChat(prompt) {
   const modelId = "models/gemini-2.0-flash";
   const model = genAI.getGenerativeModel({ model: modelId });
 
