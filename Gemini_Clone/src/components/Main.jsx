@@ -108,7 +108,7 @@ const Main = () => {
                   </div>
 
                   <div className="p-5 h-[200px] max-w-[200px] bg-[#f0f4f9] rounded-lg relative cursor-pointer hover:bg-[#dfe4ea] "  onClick={()=>handleCardClick("How do you create a responsive navbar using CSS and JavaScript?")}>
-                     <p className='text-[#585858]'>How do you create a responsive navbar using CSS and JavaScript?</p>
+                     <p className='text-[#585858]'>What are the advantages of bathing every day?</p>
                       <img src={assets.message_icon} alt="message"  className='size-[35px] absolute bottom-5  right-5 rounded-full bg-white  p-[5px] '/>
                   </div>
 
@@ -120,7 +120,7 @@ const Main = () => {
 
 
            </>):(
-					<div className="px-[5%] max-h-[70vh] overflow-y-scroll scrollbar-hide mb-5">
+					<div className="px-[5%] max-h-[70vh] overflow-y-scroll scrollbar-hide ">
 						<div className="my-[40px] flex items-center gap-[20px]">
 							<img src={assets.user} alt="" className="w-[40px] rounded-full" />
 							<p className='self-end max-w-[80%] bg-[#e8f0fe] px-4 py-2 rounded-tl-sm rounded-tr-full rounded-br-full rounded-bl-full text-[16px] '>{input}</p>
@@ -148,7 +148,7 @@ const Main = () => {
 
                                <p
                                    className={`transition-all duration-500 ease-in-out opacity-0 translate-y-2 ${
-                                    resultData ? 'opacity-100 translate-y-0 px-7' : ''
+                                    resultData ? 'opacity-100 translate-y-0 pb-7' : ''
                                    } text-[16px] font-light leading-[1.8]`}  
                                    dangerouslySetInnerHTML={{ __html: resultData }}
                                    
