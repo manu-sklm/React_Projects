@@ -76,7 +76,7 @@ const Sidebar = () => {
              {[
                { icon: assets.question_icon, label: 'Help' },
                { icon: assets.history_icon, label: 'Activity' },
-               { icon: assets.setting_icon, label: 'Setting' },
+               { icon: assets.setting_icon, label: 'Settings' },
              ].map((item, i) => (
                <div
                  key={i}

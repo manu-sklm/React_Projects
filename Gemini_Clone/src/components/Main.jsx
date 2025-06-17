@@ -92,7 +92,7 @@ const Main = () => {
                     Hello, Sugu
                   </span>
                 </p>
-               <p className=''>How can you help you today</p>
+               <p className=''>How can i help you today</p>
 
             </div>  
 
