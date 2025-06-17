@@ -18,7 +18,7 @@ const Main = () => {
     
       console.log("HandleCardClick send called.");
       dispatch(setInput(promptText));
-      dispatch(sendPrompt(input));
+      dispatch(sendPrompt(promptText));
      
 
 
