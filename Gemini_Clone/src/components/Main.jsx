@@ -148,7 +148,7 @@ const Main = () => {
 
                                <p
                                    className={`transition-all duration-500 ease-in-out opacity-0 translate-y-2 ${
-                                    resultData ? 'opacity-100 translate-y-0 p-7' : ''
+                                    resultData ? 'opacity-100 translate-y-0 px-7' : ''
                                    } text-[16px] font-light leading-[1.8]`}  
                                    dangerouslySetInnerHTML={{ __html: resultData }}
                                    
