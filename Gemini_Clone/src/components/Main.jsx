@@ -107,7 +107,7 @@ const Main = () => {
                     <img src={assets.bulb_icon} alt="buld"  className='size-[35px] absolute bottom-5  right-5 rounded-full bg-white  p-[5px]  '/>
                   </div>
 
-                  <div className="p-5 h-[200px] max-w-[200px] bg-[#f0f4f9] rounded-lg relative cursor-pointer hover:bg-[#dfe4ea] "  onClick={()=>handleCardClick("How do you create a responsive navbar using CSS and JavaScript?")}>
+                  <div className="p-5 h-[200px] max-w-[200px] bg-[#f0f4f9] rounded-lg relative cursor-pointer hover:bg-[#dfe4ea] "  onClick={()=>handleCardClick("What are the advantages of bathing every day?")}>
                      <p className='text-[#585858]'>What are the advantages of bathing every day?</p>
                       <img src={assets.message_icon} alt="message"  className='size-[35px] absolute bottom-5  right-5 rounded-full bg-white  p-[5px] '/>
                   </div>
