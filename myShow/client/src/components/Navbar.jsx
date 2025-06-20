@@ -20,14 +20,15 @@ const Navbar = () => {
         <Link className='max-md:flex-1' to="/"><img src={assets.logo} alt="" className='w-36 h-auto ' /></Link>
 
 
-        <div className={`max-md:absolute max-md:top-0 max-md:left-0 max-md:font-medium  max-md:text-lg z-50 flex flex-row  max-md:items-center max-md:flex-col justify-center gap-8 md:px-8 py-3 max-md:h-screen md:rounded-full backdrop-blur bg-black/70 md:bg-white/10 md:border border-gray-200/20 overflow-hidden  transition-[width] duration-500 ${isOpen? 'max-md:w-full': 'max-md:w-0'}` }>
+        <div className={`max-md:absolute max-md:top-0 max-md:left-0 max-md:font-medium  max-md:text-lg z-50 flex flex-row  max-md:items-center  max-md:flex-col justify-center gap-8 md:px-8 py-3 max-md:h-screen md:rounded-full backdrop-blur bg-black/70 md:bg-white/10 md:border border-gray-200/20 overflow-hidden  transition-[width] duration-500 ${isOpen? 'max-md:w-full': 'max-md:w-0'}` }>
           
           <XIcon className="md:hidden absolute top-6 right-6 w-6 h-6 cursor-pointer" onClick={ ()=>setisOpen(!isOpen)}/>
-          <Link onClick={()=>{scrollTo(0,0),setisOpen(false)}} to="/" >Home</Link>
-          <Link onClick={()=>{scrollTo(0,0),setisOpen(false)}} to="/movies">Movies</Link>
-          <Link onClick={()=>{scrollTo(0,0),setisOpen(false)}} to="/theaters">Theaters</Link>
-          <Link onClick={()=>{scrollTo(0,0),setisOpen(false)}} to="/releases">Releases</Link>
-          <Link onClick={()=>{scrollTo(0,0),setisOpen(false)}} to="/favorites">Favorite</Link>
+          <Link onClick={()=>{scrollTo(0,0); setisOpen(false)}} to="/" >Home</Link>
+          <Link onClick={()=>{scrollTo(0,0); setisOpen(false)}} to="/movies">Movies</Link>
+          <Link onClick={()=>{scrollTo(0,0); setisOpen(false)}} to="/theaters">Theaters</Link>
+          <Link onClick={()=>{scrollTo(0,0); setisOpen(false)}} to="/releases">Releases</Link>
+          <Link onClick={()=>{scrollTo(0,0); setisOpen(false)}} to="/favorites">Favorite</Link>
+
         </div>
 
         <div className='flex items-center gap-8'>
