@@ -9,6 +9,7 @@ import MovieCard from '../components/MovieCard'
 import { useNavigate, useParams } from 'react-router-dom'
 
 import FeaturedSection from '../components/FeaturedSection'
+import Loader from '../components/Loader'
 const MoviesDetails = () => {
 
   const {id}=useParams();
@@ -17,11 +18,14 @@ const MoviesDetails = () => {
   
   const getShow=async ()=>{
     const show=dummyShowsData.find(show=>show._id==id);
-
-    setShow({
-      movie:show,
-      dateTime:dummyDateTimeData
-    })
+    
+      if(show){
+          setShow({
+          movie:show,
+          dateTime:dummyDateTimeData
+          })
+      }
+   
   }
 
 
@@ -106,7 +110,7 @@ const MoviesDetails = () => {
             
       </div>
     </div>
-  ) : <div>Loading ....</div>
+  ) : <Loader/>
 }
 
 export default MoviesDetails
