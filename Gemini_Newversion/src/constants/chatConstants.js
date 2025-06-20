@@ -1,0 +1,1 @@
+export const MAX_PROMPTS = 10;

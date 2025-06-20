@@ -1,5 +1,5 @@
 {
-  "name": "dummy",
+  "name": "gemini-clone",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,8 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@reduxjs/toolkit": "^2.8.2",
+    "@tailwindcss/vite": "^4.1.10",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.18.1",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-redux": "^9.2.0",
+    "tailwind-scrollbar": "^4.0.2",
+    "tailwindcss": "^4.1.10"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",

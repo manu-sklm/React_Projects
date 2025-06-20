@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c2c8d0; /* Soft gray thumb */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a0a6ad;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* 
+.scroll-fade {
+  position: relative;
+}
+.scroll-fade::before,
+.scroll-fade::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 10px;
+  z-index: 10;
+  pointer-events: none;
+}
+.scroll-fade::before {
+  top: 0;
+  background: linear-gradient(to bottom, #f0f4f9, transparent);
+}
+.scroll-fade::after {
+  bottom: 0;
+  background: linear-gradient(to top, #f0f4f9, transparent);
+} 
+
+
+
+*/
+
+*{
+   font-family: "Outfit", sans-serif;
+}

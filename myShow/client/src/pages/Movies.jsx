@@ -19,6 +19,7 @@ const Movies = () => {
         <h2 className='text-gray-300 font-medium text-lg mt-4 '>Now Showing</h2>
       
         <div className='flex flex-wrap max-sm:justify-center gap-8 mt-5 relative '>
+          
           <BlurCircle top='50px' left='-140px'/>
           <BlurCircle bottom='0' right='-80px'/>
            
